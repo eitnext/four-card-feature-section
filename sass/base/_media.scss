@@ -1,0 +1,11 @@
+@media( min-width: 600px ){
+   
+    .card__box{
+    display: grid;
+    grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    }
+}

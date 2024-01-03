@@ -1,0 +1,53 @@
+%heading{
+    font-size: $fs-900;
+    line-height: 1.3;
+    color: $clr-neutral-900;
+}
+
+%text{
+    color: $clr-neutral-400;
+    line-height: 1.7;
+}
+
+
+.heading--1{
+    @extend %heading;
+    font-weight: $fw-light;
+    
+    span{
+        font-weight: $fw-bold;
+
+    }
+}
+
+.heading--2{
+    @extend %heading;
+    font-size: $fs-600;
+    font-weight: $fw-bold;
+     
+}
+
+.card{
+
+    &__text{
+        font-size: $fs-300;
+        @extend %text;    }
+}
+
+.header{
+    
+    &__text{
+        font-size: $fs-400;
+        @extend %text;
+    }
+}
+
+.mb-sm{ margin-bottom: 2rem; }
+.mb-md{ margin-bottom: 3rem; }
+.mb-lg{ margin-bottom: 6rem; }
+.mb-hg{ margin-bottom: 8rem; }
+
+.brd-red{ border-top: 2px solid $clr-red;}
+.brd-cyan{ border-top: 2px solid $clr-cyan;}
+.brd-orange{ border-top: 2px solid $clr-orange;}
+.brd-blue{ border-top: 2px solid $clr-blue;}
